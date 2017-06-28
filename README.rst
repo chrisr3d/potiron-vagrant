@@ -17,7 +17,7 @@ potiron will be automatically deployed in an Ubuntu Zesty Server.
 
 .. code-block:: bash
 
-    $ git clone
+    $ git clone https://github.com/cedricbonhomme/potiron-vagrant.git
     $ cd potiron-vagrant/
     $ vagrant up
 

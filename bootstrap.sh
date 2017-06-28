@@ -13,7 +13,7 @@ apt-get install -y python3-pip libgeoip-dev > /dev/null 2>&1
 # to simply use a virtualenv (https://github.com/berdario/pew)
 
 
-# installation of redis, etc.
+# TODO: installation of redis, etc.
 
 
 echo -e "\n--- Retrieving potiron ---\n"
