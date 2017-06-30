@@ -22,4 +22,4 @@ potiron will be automatically installed in an Ubuntu Zesty Server.
     $ vagrant up
 
 Once the VM will be configured by Vagrant, go to the address
-http://127.0.0.1:500.
+http://127.0.0.1:5000.
