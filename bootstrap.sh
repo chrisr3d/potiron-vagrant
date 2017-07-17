@@ -12,9 +12,9 @@ apt-get install -y python3-pip libgeoip-dev > /dev/null 2>&1
 # (https://gist.github.com/cedricbonhomme/35e81e295fd4baed83d6ccb2cb9fde79) or
 # to simply use a virtualenv (https://github.com/berdario/pew)
 
-
-# TODO: installation of redis, etc.
-
+apt-get install -y git npm nodejs-legacy redis-server parallel > /dev/null 2>&1
+echo -e "\n--- Install tshark ---\n"
+DEBIAN_FRONTEND=noninteractive apt-get -y install tshark
 
 echo -e "\n--- Retrieving potiron ---\n"
 git clone https://github.com/CIRCL/potiron.git > /dev/null 2>&1
@@ -27,8 +27,9 @@ cd potiron/
 
 echo -e "\n--- Installing potiron ---\n"
 pip3 install -r requirements.txt
-cd ./var/www
-bash ./update_thirdparty.sh
+npm install -g phantomjs-prebuilt
+# cd ./var/www
+# bash ./update_thirdparty.sh
 # some errors in this script : http 404 not found...
 
 # how to launch the web server? I don't have read all... ;-)
